@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>План роста Benefit Stock</title>
-<meta name="description" content="План роста Benefit Stock на год: позиционирование, герой бренда Stockomat, рынок, каналы, цифры и наброски платформы Second Season.">
+<meta name="description" content="План роста Benefit Stock на год: позиционирование, лицо бренда, рынок, каналы, цифры и наброски платформы Second Season.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#ECEEEB" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101316" media="(prefers-color-scheme: dark)">
@@ -12,14 +12,13 @@
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:title" content="План роста Benefit Stock">
-<meta property="og:description" content="План роста Benefit Stock на год: позиционирование, герой бренда Stockomat, рынок, каналы, цифры и наброски платформы Second Season.">
+<meta property="og:description" content="План роста Benefit Stock на год: позиционирование, лицо бренда, рынок, каналы, цифры и наброски платформы Second Season.">
 <meta property="og:image" content="og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" href="stk_hero.jpg" as="image" imagesrcset="stk_hero_s.jpg 600w, stk_hero.jpg 960w" imagesizes="(max-width: 760px) 92vw, 46vw">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap">
 <style>
@@ -425,6 +424,52 @@ button,a{-webkit-tap-highlight-color:transparent}
 .wk p.pr{color:var(--hv-ink)}
 .screenpane .btn{white-space:normal}
 
+/* hero panel without mascot */
+.hpanel{position:relative;margin:0;border-radius:18px;overflow:hidden;aspect-ratio:4/4.6;display:grid;place-items:center;
+  background:
+    repeating-linear-gradient(0deg,transparent 0 58px,rgba(20,24,29,.10) 58px 60px),
+    repeating-linear-gradient(90deg,transparent 0 86px,rgba(20,24,29,.10) 86px 88px),
+    linear-gradient(160deg,#FF6A24,#F04E0C);box-shadow:var(--shadow)}
+.hpanel .receipt.big{position:relative;right:auto;bottom:auto;width:min(76%,340px);font-size:13.5px;padding:18px 18px 28px;transform:rotate(-2.5deg);box-shadow:0 30px 50px -24px rgba(0,0,0,.6),0 1px 0 rgba(0,0,0,.08)}
+.hpanel .receipt.big ol{min-height:15em}
+.hpanel .rhead{font-size:12px}
+.hlot{position:absolute;left:16px;top:16px;font:700 11px var(--f-mono);letter-spacing:.08em;color:#14181D;background:rgba(255,255,255,.75);padding:6px 9px;border-radius:4px}
+.hstamp{position:absolute;right:9%;bottom:15%;font:800 15px var(--f-mono);font-style:normal;letter-spacing:.12em;color:#1F7A45;border:3px solid #1F7A45;border-radius:6px;padding:7px 11px;transform:rotate(-12deg);background:rgba(251,251,246,.55);mix-blend-mode:multiply}
+.hpanel figcaption{position:absolute;left:16px;right:16px;bottom:14px;font:500 12px var(--f-body);color:rgba(20,24,29,.82)}
+@media (max-width:760px){.hpanel{order:2;aspect-ratio:auto;padding:58px 16px 64px}.hpanel .receipt.big{font-size:11.5px;width:84%}.hstamp{font-size:12px;bottom:12%}}
+.deal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:30px}
+.dc{position:relative;border-radius:14px;background:var(--ink);color:var(--bg);padding:18px 16px;display:flex;flex-direction:column;gap:6px;min-width:0;min-height:210px}
+.dc span{font:700 11px var(--f-mono);letter-spacing:.08em;color:var(--hv)}
+.dc b{font:700 17px/1.2 var(--f-display);text-wrap:balance}
+.dc p{font-size:13.5px;line-height:1.45;opacity:.85}
+.dc code{margin-top:auto;font:500 11.5px var(--f-mono);opacity:.75;border-top:1px dashed currentColor;padding-top:8px}
+.dc.card{background:var(--hv);color:#14181D}
+.dc.card span{color:#14181D}
+.dc.card p{opacity:1}
+.dc .stampmini{top:16px;right:12px}
+@media (max-width:900px){.deal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.deal{grid-template-columns:1fr}.dc{min-height:0}.dc.card{padding-top:52px}}
+/* text frames in reel */
+.fr.tf{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:28px 22px 90px;color:#fff}
+.fr.tf.dark{background:radial-gradient(120% 80% at 50% 20%,#2A3038,#111316)}
+.fr.tf.hv{background:linear-gradient(160deg,#FF6A24,#E84B0B);color:#14181D}
+.fr.tf small{font:600 10.5px var(--f-mono);letter-spacing:.12em;opacity:.8}
+.fr.tf strong{font:800 30px/1.05 var(--f-display);letter-spacing:-.01em}
+.fr.tf .boxes{display:block;height:84px;margin-top:6px;background:
+  linear-gradient(#B9844E,#B9844E) 0 100%/46% 40px no-repeat,linear-gradient(#A8743F,#A8743F) 54% 100%/42% 40px no-repeat,
+  linear-gradient(#C99A62,#C99A62) 10% 0/40% 40px no-repeat,linear-gradient(#B9844E,#B9844E) 62% 0/38% 40px no-repeat;opacity:.9}
+/* brand assets */
+.assets{display:grid;gap:10px;min-width:0}
+.as{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.as .k{font:600 11px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--hv-ink);padding-top:3px}
+.as b{display:block;font:600 16px var(--f-display);margin-bottom:3px}
+.as p{font-size:14px;color:var(--muted)}
+.stampinline{display:inline-block!important;font:800 12px var(--f-mono)!important;letter-spacing:.12em;color:var(--ok);border:2px solid var(--ok);border-radius:4px;padding:3px 8px;transform:rotate(-3deg);margin-bottom:6px!important}
+@media (max-width:440px){.as{grid-template-columns:1fr;gap:4px}}
+.dc.card{padding-top:52px}
+@media (max-width:760px){.hstamp{bottom:auto;top:16px;right:14px;font-size:11px}.hpanel{padding-top:64px}.hlot{top:18px}}
+@media (max-width:760px){.hlot{display:none}}
+
 </style>
 </head>
 <body>
@@ -432,7 +477,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   <div class="wrap">
     <div class="brand"><i aria-hidden="true"></i>Benefit Stock</div>
     <nav class="nav" aria-label="Разделы">
-      <a href="#sut">Суть</a><a href="#geroi">Герой</a><a href="#rynok">Рынок</a><a href="#kanaly">Каналы</a><a href="#rost">Рост</a><a href="#platforma">Second Season</a><a href="#istochniki">Источники</a>
+      <a href="#sut">Суть</a><a href="#lico">Лицо</a><a href="#rynok">Рынок</a><a href="#kanaly">Каналы</a><a href="#rost">Рост</a><a href="#platforma">Second Season</a><a href="#istochniki">Источники</a>
     </nav>
   </div>
 </header>
@@ -444,26 +489,27 @@ button,a{-webkit-tap-highlight-color:transparent}
     <div class="hcopy">
       <span class="label"><b>План роста</b> 12 месяцев · ноябрь 2026 <span class="bars" aria-hidden="true"></span></span>
       <h1>У скупщиков стока нет лица. <em>У Benefit Stock будет.</em></h1>
-      <p class="sub">Знакомьтесь, Stockomat. Оранжевый автомат приёма стока сначала печатает чек, потом забирает всю партию целиком, вместе с 36-м и 47-м размером. Чек длиной в склад и есть паспорт партии.</p>
+      <p class="sub">Скорость и предоплату обещают все. Benefit Stock выигрывает тем, что продавец видит до первого письма: основатель, который говорит цифрами, паспорт партии для отчёта по ESPR и публичный индекс цен на сток.</p>
       <p class="motto" lang="en">Paid first. Taken en bloc.</p>
-      <div class="hbtns"><a class="btn" href="#reel">Смотреть ролик</a><a class="btn ghost" href="#vybor">Как его выбирали</a></div>
-      <p class="hnote">Героя выбрал совет из четырёх маркетологов. Восемь зверей в жилетах из прошлой версии не получили ни одного голоса.</p>
+      <div class="hbtns"><a class="btn" href="#sut">Смотреть план</a><a class="btn ghost" href="#kanaly">Каналы и деньги</a></div>
+      <p class="hnote">12 месяцев: позиционирование, рынок, каналы, €5 000 в месяц, цифры роста и путь к платформе Second Season.</p>
     </div>
-    <figure class="hfig">
-      <img class="hshot" src="stk_hero.jpg" srcset="stk_hero_s.jpg 600w, stk_hero.jpg 960w" sizes="(max-width: 760px) 92vw, 46vw" width="960" height="1190" alt="Stockomat: высокий оранжевый автомат с двумя глазами-лампами и щелью-ртом печатает длинный чек">
-      <div class="receipt" id="receipt" aria-label="Чек Stockomat: оплачено до вывоза, партия 12 480 пар, все размеры, паспорт партии">
-        <div class="rhead">STOCKOMAT · ЧЕК 2611</div>
+    <figure class="hpanel">
+      <span class="hlot">LOT 2611-BS · outdoor FW25</span>
+      <div class="receipt big" id="receipt" aria-label="Пример паспорта партии: оплачено до вывоза, 12 480 пар, все размеры">
+        <div class="rhead">BENEFIT STOCK · ПАСПОРТ ПАРТИИ</div>
         <ol id="rlines" aria-hidden="true"></ol>
       </div>
-      <figcaption>Рендер героя · сделано с ИИ</figcaption>
+      <i class="hstamp" aria-hidden="true">PAID BEFORE PICKUP</i>
+      <figcaption>Так выглядит документ, который продавец получает к каждой партии</figcaption>
     </figure>
   </div>
 
-  <div class="story" aria-label="Как работает Stockomat">
-    <figure class="sf"><img src="stk_uff.jpg" width="720" height="1281" loading="lazy" alt="Раздутый склад продавца, коробки торчат из окон и из-под ворот"><figcaption><span>01</span><b>Январь. Склад раздуло</b><p>Конец сезона, возвраты и отменённые заказы. Коробки лезут из окон.</p></figcaption></figure>
-    <figure class="sf"><img src="stk_action.jpg" width="900" height="1115" loading="lazy" alt="Stockomat на складе: чек уже вышел, башня коробок целиком въезжает ему в рот"><figcaption><span>02</span><b>Сначала чек, потом вся партия</b><p>Ничего не мнёт и не выбирает ходовые размеры. Коробки уходят целыми.</p></figcaption></figure>
-    <figure class="sf"><img src="stk_receipt.jpg" width="720" height="1281" loading="lazy" alt="Пустой чистый склад, через весь пол тянется бесконечный чек от автомата в углу"><figcaption><span>03</span><b>Пустой склад и чек длиной в склад</b><p>Одна строка на коробку. Без записи не исчезает ничего.</p></figcaption></figure>
-    <div class="sf card"><span>04</span><b>Паспорт партии уходит в отчёт ESPR</b><p>Договор, счёт, CMR, коды CN, штуки, вес и регион продажи. Продавец подтверждает в отчёте, что сток перепродан.</p><i class="stampmini">PAID BEFORE PICKUP</i></div>
+  <div class="deal" aria-label="Как проходит сделка">
+    <div class="dc"><span>01</span><b>Сток-лист</b><p>Продавец присылает файл как есть: Excel, PDF или фото склада.</p><code>EAN · артикул · размер · штуки</code></div>
+    <div class="dc"><span>02</span><b>Твёрдый оффер за 48 часов</b><p>Цена за всю партию сразу. Ходовые размеры отдельно не выбираем.</p><code>€9,40 × 12 480 пар</code></div>
+    <div class="dc"><span>03</span><b>100% до вывоза</b><p>Деньги на счёте продавца раньше, чем приезжает грузовик.</p><code>банковский перевод</code></div>
+    <div class="dc card"><span>04</span><b>Паспорт партии в отчёт ESPR</b><p>Договор, счёт, CMR, коды CN, штуки, вес и регион продажи. Продавец подтверждает в отчёте, что сток перепродан.</p><i class="stampmini">PAID BEFORE PICKUP</i></div>
   </div>
 
   <div class="kpis">
@@ -508,103 +554,61 @@ button,a{-webkit-tap-highlight-color:transparent}
   <p class="note" style="margin-top:14px">Паспорт подтверждает в отчёте продавца, что партия перепродана целиком. Переработка по ESPR тоже считается уничтожением, перепродажа нет<sup class="s"><a href="#s5">5</a></sup>. Ограничения ставим на каналы и на рынки за пределами ЕС: запрет перепродажи внутри ЕС может оказаться жёстким антимонопольным ограничением<sup class="s"><a href="#s22">22</a></sup>, формулировку проверяет юрист.</p>
 </section>
 
-<section class="bay wrap" id="geroi">
+<section class="bay wrap" id="lico">
   <div class="bay-head">
-    <span class="label"><b>Герой</b> выбор совета маркетологов <span class="bars" aria-hidden="true"></span></span>
-    <h2>Четыре маркетолога, 24 идеи и один автомат</h2>
-    <p>Стратег по методу Хормози, креативный директор коротких видео, бренд-стратег и панель из шести продавцов стока сначала оценили восемь зверей в жилетах. Потом каждый придумал по четыре новых героя, и все четверо проголосовали за общий список. Кампании с постоянным персонажем на 30% чаще растят прибыль<sup class="s"><a href="#s33">33</a></sup>, а связь с брендом важнее симпатии: Mr. Mucus был самым нелюбимым из 82 маскотов, и 61% людей узнают по нему бренд<sup class="s"><a href="#s35">35</a></sup>.</p>
+    <span class="label"><b>Лицо бренда</b> основатель, документы и цифры <span class="bars" aria-hidden="true"></span></span>
+    <h2>Лицо Benefit Stock: человек, который платит первым, и вещи, которые не меняются</h2>
+    <p>Продавец стока отдаёт партию тому, кого уже видел и кому верит. Поэтому лицом бренда становится основатель: он говорит в LinkedIn и в роликах цифрами из настоящих сделок. Узнаваемость держат пять постоянных знаков, они повторяются в каждом ролике, письме и оффере. Кампании с постоянными узнаваемыми элементами на 30% чаще растят прибыль<sup class="s"><a href="#s33">33</a></sup>.</p>
   </div>
 
   <div class="reelwrap" id="reel">
     <div>
       <div class="phone">
-        <div class="screen" id="screen" aria-label="Пример вертикального ролика 9:16 со Stockomat">
+        <div class="screen" id="screen" aria-label="Пример вертикального ролика 9:16">
           <div class="frames" id="frames">
-            <img class="fr on" src="stk_uff.jpg" alt="" loading="lazy">
-            <img class="fr" src="stk_hero_s.jpg" alt="" loading="lazy">
-            <img class="fr" src="stk_action.jpg" alt="" loading="lazy">
-            <img class="fr" src="stk_receipt.jpg" alt="" loading="lazy">
+            <div class="fr on tf dark"><small>JANUARY</small><strong lang="en">Your warehouse is full.</strong><em class="boxes" aria-hidden="true"></em></div>
+            <div class="fr tf hv"><small>100% · BANK TRANSFER</small><strong lang="en">We pay before pickup.</strong></div>
+            <div class="fr tf dark"><small>36 37 38 39 40 41 42 43 44 45 46 47</small><strong lang="en">Every size. Every box.</strong></div>
+            <img class="fr" src="floor_receipt.jpg" alt="" loading="lazy">
           </div>
-          <div class="cap" id="cap" lang="en">Your warehouse in January.</div>
+          <div class="cap" id="cap" lang="en"></div>
           <div class="rail" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="meta"><b>@benefitstock</b><span lang="en">Firm offer in 48h. Paid before pickup.</span><br><span class="ai">MADE WITH AI</span></div>
-          <div class="endcard" id="endcard"><b>Benefit Stock</b><span lang="en">Paid first. Taken en bloc.</span><small>FIRM OFFER IN 48H · MADE WITH AI</small></div>
+          <div class="meta"><b>@benefitstock</b><span lang="en">Firm offer in 48h. Paid before pickup.</span></div>
+          <div class="endcard" id="endcard"><b>Benefit Stock</b><span lang="en">Paid first. Taken en bloc.</span><small>FIRM OFFER IN 48H</small></div>
           <div class="prog"><i id="prog"></i></div>
         </div>
       </div>
       <div class="reelctl" role="group" aria-label="Кадры ролика">
         <button type="button" data-f="0" aria-pressed="true">Склад</button>
-        <button type="button" data-f="1" aria-pressed="false">Чек</button>
+        <button type="button" data-f="1" aria-pressed="false">Оплата</button>
         <button type="button" data-f="2" aria-pressed="false">Партия</button>
-        <button type="button" data-f="3" aria-pressed="false">Пусто</button>
+        <button type="button" data-f="3" aria-pressed="false">Паспорт</button>
         <button type="button" id="r-play" aria-pressed="false">Пауза</button>
       </div>
     </div>
 
-    <div class="votecol" id="vybor">
-      <div class="sub-h" style="margin-top:0"><h3>Голосование</h3><span>3, 2 и 1 очко от каждого · средняя оценка из 60</span></div>
-      <div class="votes" id="votes"></div>
-      <div class="was">
-        <img src="old_cast.jpg" width="1288" height="200" loading="lazy" alt="Прошлая версия: восемь зверей в оранжевых жилетах">
-        <p>Прошлая версия: енот, пеликан, хомяк, слон, капибара, аксолотль, броненосец и лось в одинаковых жилетах. В среднем 25-31 балл из 60 и ни одного голоса. Жилет говорит «грузчик», а продавцу нужен покупатель с деньгами.</p>
-      </div>
-      <div class="cell style">
-        <span class="k">Стиль</span>
-        <h3>Предметная съёмка в духе немецкого промдизайна 60-х</h3>
-        <p>За него трое из четырёх. Автомат выглядит настоящим и делает невозможное, такой кадр останавливает ленту лучше мультяшного 3D. Жёсткую форму без меха и лап Kling и Veo держат от кадра к кадру. Панель продавцов предлагала пластилин.</p>
-      </div>
+    <div class="assets">
+      <div class="sub-h" style="margin-top:0"><h3>Пять постоянных знаков</h3><span>в каждом ролике, письме и оффере</span></div>
+      <div class="as"><span class="k">Человек</span><div><b>Основатель в кадре</b><p>3 поста в неделю в LinkedIn и 2 вертикальных ролика. Говорит цифрами из сделок: сколько пар, за сколько дней, куда ушла партия. Снимает себя на телефон по нашему сценарию.</p></div></div>
+      <div class="as"><span class="k">Фраза</span><div><b lang="en">Paid first. Taken en bloc.</b><p>«En bloc» понимают во всех шести странах: in blocco, en bloque, en bloc. Последний кадр каждого ролика и подпись в письмах.</p></div></div>
+      <div class="as"><span class="k">Печать</span><div><b class="stampinline">PAID BEFORE PICKUP</b><p>На оффере, паспорте партии, в подписи письма и на сайте. Один знак, который читается без слов.</p></div></div>
+      <div class="as"><span class="k">Документ</span><div><b>Паспорт партии</b><p>Каждая сделка заканчивается документом для отчёта по ESPR. Его форма и есть фирменный стиль роликов.</p></div></div>
+      <div class="as"><span class="k">Цифры</span><div><b>Индекс стока</b><p>Дважды в год из наших сделок. Его цитирует пресса, а ответы нейросетей подтягивают Benefit Stock.</p></div></div>
     </div>
-  </div>
-
-  <div class="sub-h"><h3>Правила героя</h3><span>чтобы автомат узнавали с первого кадра</span></div>
-  <div class="grid2">
-    <div class="cell"><span class="k">Всегда</span>
-      <ul class="dos">
-        <li>Сначала чек, потом партия. Так видно, что платим до вывоза.</li>
-        <li>Одна строка чека на каждую коробку.</li>
-        <li>В конце задняя дверца открывается в закрытый оранжевый грузовик, сверху ложится паспорт партии.</li>
-        <li>Два глаза-лампы и щель-рот, экрана нет. Наевшись, он чуть подпрыгивает.</li>
-      </ul>
-    </div>
-    <div class="cell"><span class="k">Никогда</span>
-      <ul class="donts">
-        <li>Не жуёт и не мнёт коробки: хруст читается как уничтожение.</li>
-        <li>Не платит монетами и наличными, только чеком и переводом.</li>
-        <li>Не показывает чужие логотипы и названия банкротов, только категорию товара.</li>
-        <li>Не похож на автоматы TOMRA: без зелёного цвета и без экрана.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="sub-h"><h3>Кто рядом с ним</h3><span>серии держатся на конфликте</span></div>
-  <div class="grid3">
-    <div class="cell"><span class="k">Uff · склад продавца</span><h3>Боль, с которой начинается ролик</h3><p>Раздутый склад с коробками в окнах. Когда приходит Stockomat, склад выдыхает.</p></div>
-    <div class="cell"><span class="k">Серая клешня · конкурент</span><h3>Берёт только 42-й и роняет</h3><p>Так выглядит скупщик, который выбирает лучшие размеры и оставляет продавцу остальное.</p></div>
-    <div class="cell"><span class="k">BLOK · запасной</span><h3>Второе место совета</h3><p>Паллета в оранжевой стрейч-плёнке с глазами-бусинами. Идёт в A/B-тест против Stockomat.</p></div>
   </div>
 
   <div class="sub-h"><h3>Рубрики</h3><span>2 ролика в неделю, реакции на новости шаблоном</span></div>
-  <div class="rubrics"><span>Что он ест: возвраты, смешанные сезоны, паллета 47-х</span><span>Чек длиной в склад</span><span>Клешня берёт только 42-й</span><span>ESPR: шредер заклеен скотчем</span><span>Новость дня: щель открыта</span><span>Ночная смена на складе</span></div>
-
-  <div class="sub-h"><h3>Проверка перед запуском</h3><span>месяц 1 · €400-600</span></div>
-  <ol class="steps">
-    <li><div><b>Кадры 8-10 продавцам</b><p>Три кадра без логотипа и вопрос: «Что это за компания и что она делает?»</p></div></li>
-    <li><div><b>A/B-эксперимент в Meta</b><p>Stockomat против BLOK, по €200 на героя в DE, IT, NL, FR, ES и UK. Смотрим удержание первых трёх секунд, досмотры и сохранения.</p></div></li>
-    <li><div><b>Имя</b><p>Так уже называются обжимные станки Stocko Contact<sup class="s"><a href="#s36">36</a></sup>. Класс товаров другой, решение принимает юрист после проверки в TMview. Запасное имя BLOKOMAT.</p></div></li>
-  </ol>
-  <div class="rule">Запускаем, если продавцы без подсказки отвечают «платит первым и забирает всю партию». Дальше героя не меняем минимум год.</div>
+  <div class="rubrics"><span>Партия недели: что, сколько и за сколько дней</span><span>Мифы о скупщиках</span><span>ESPR простыми словами</span><span>Банкротство дня: что будет со стоком</span><span>Как выглядит паспорт партии</span><span>Индекс стока</span></div>
 
   <div class="sub-h"><h3>Конвейер роликов</h3><span>€1 000 в месяц · 6-8 роликов и шаблоны</span></div>
   <div class="pipe">
-    <div><span>3D-модель автомата<small>разово, жёсткая форма</small></span><em>→</em></div>
-    <div><span>Ключевые кадры<small>Nano Banana, Midjourney</small></span><em>→</em></div>
-    <div><span>Анимация<small>Kling 3.0, Veo 3.1</small></span><em>→</em></div>
-    <div><span>Один и тот же автомат<small>референс-лист</small></span><em>→</em></div>
-    <div><span>Звук<small>щелчок, писк, принтер</small></span><em>→</em></div>
-    <div><span>Монтаж 9:16<small>CapCut</small></span><em>→</em></div>
+    <div><span>Сценарий<small>агентство, раз в неделю</small></span><em>→</em></div>
+    <div><span>Основатель на телефон<small>15-30 минут в неделю</small></span><em>→</em></div>
+    <div><span>Кадры складов и партий<small>Nano Banana, Kling, Veo</small></span><em>→</em></div>
+    <div><span>Монтаж 9:16<small>субтитры, печать, фраза</small></span><em>→</em></div>
     <div><span>Instagram, TikTok, Shorts, LinkedIn<small>один файл</small></span></div>
   </div>
-  <p class="note" style="margin-top:14px">Отметку об ИИ включаем на каждой площадке добровольно<sup class="s"><a href="#s37">37</a></sup>. Автомат приёма тары знаком каждому в Германии и Нидерландах. Во Франции, Италии и Испании оплату показывает чек, поэтому он всегда в кадре.</p>
+  <p class="note" style="margin-top:14px">Персонажа-маскота пробуем только после первых сделок. Показываем 8-10 продавцам два-три направления без логотипа и спрашиваем: «Что это за компания?» Если ни одно не читается как «платит первым и забирает всю партию», остаёмся с основателем и знаками. Кадры с ИИ помечаем на каждой площадке<sup class="s"><a href="#s37">37</a></sup>.</p>
 </section>
 
 <section class="bay wrap" id="rynok">
@@ -651,7 +655,7 @@ button,a{-webkit-tap-highlight-color:transparent}
     <div class="c"><span class="t">Аукционы · US</span><b>B-Stock</b><p>Около 1,9 млн визитов в месяц, данные о ценах в закрытых отчётах<sup class="s"><a href="#s18">18</a></sup></p></div>
     <div class="c"><span class="t">Доска объявлений · PL</span><b>Merkandi</b><p>Около 141 000 визитов в месяц, сделки вне площадки<sup class="s"><a href="#s19">19</a></sup></p></div>
     <div class="c"><span class="t">Аутлет для покупателей · NL</span><b>Otrium</b><p>Около 379 000 визитов, 51% из Германии<sup class="s"><a href="#s20">20</a></sup></p></div>
-    <div class="c us"><span class="t">Прямой покупатель · план</span><b>Benefit Stock</b><p>Stockomat, брендовая обувь, паспорт партии, индекс цен и публичная доска спроса Wanted</p></div>
+    <div class="c us"><span class="t">Прямой покупатель · план</span><b>Benefit Stock</b><p>Лицо бренда, брендовая обувь, паспорт партии, индекс цен и публичная доска спроса Wanted</p></div>
   </div>
 
   <div class="sub-h"><h3>Что спросит жёсткий инвестор</h3><span>и что мы делаем</span></div>
@@ -659,7 +663,7 @@ button,a{-webkit-tap-highlight-color:transparent}
     <thead><tr><th>Риск</th><th>Что делаем</th></tr></thead>
     <tbody>
       <tr><td>TJX с 1 400 байерами<sup class="s"><a href="#s53">53</a></sup>, Noz и CORSO богаче нас</td><td data-l="Что делаем">Выигрываем там, где им неудобно: брендовая обувь, партии от 1 000 пар, документы для отчёта и управляющие банкротством</td></tr>
-      <tr><td>Ответ за сутки и предоплату легко скопировать</td><td data-l="Что делаем">Поэтому ставим на героя, паспорт партии и данные. Чтобы их повторить, нужны годы</td></tr>
+      <tr><td>Ответ за сутки и предоплату легко скопировать</td><td data-l="Что делаем">Поэтому ставим на лицо бренда, паспорт партии и данные. Чтобы их повторить, нужны годы</td></tr>
       <tr><td>Исключение рынков внутри ЕС может нарушать антимонопольное право<sup class="s"><a href="#s22">22</a></sup></td><td data-l="Что делаем">Ограничиваем каналы и рынки вне ЕС, текст договора проверяет юрист</td></tr>
       <tr><td>Бренд может оспорить перепродажу через товарный знак</td><td data-l="Что делаем">Права бренда исчерпаны, если товар впервые продан в ЕЭЗ с его согласия. Партии, выпущенные вне ЕЭЗ, проверяем отдельно и без согласия бренда в ЕЭЗ не продаём</td></tr>
       <tr><td>Подделки: в 2024 году таможня ЕС задержала 112 млн вещей<sup class="s"><a href="#s23">23</a></sup></td><td data-l="Что делаем">Покупаем только у брендов и их дистрибьюторов, проверяем документы до оффера</td></tr>
@@ -672,7 +676,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 <section class="bay wrap" id="kanaly">
   <div class="bay-head">
     <span class="label"><b>Каналы</b> кто что делает <span class="bars" aria-hidden="true"></span></span>
-    <h2>Продавцов приводят исходящие, поиск и LinkedIn. Доверие строят герой, PR и данные</h2>
+    <h2>Продавцов приводят исходящие, поиск и LinkedIn. Доверие строят основатель, PR и данные</h2>
     <p>Продавцов брендового стока в Европе конечное число, почти всех можно назвать поимённо. Всё видео только вертикальное 9:16, один файл на все площадки.</p>
   </div>
   <div class="ch">
@@ -688,7 +692,7 @@ button,a{-webkit-tap-highlight-color:transparent}
     <div>
       <h3><i style="background:var(--ink)"></i>Строят доверие</h3>
       <div class="chl">
-        <div class="r"><b>Instagram<small>9:16</small></b><p>Витрина Stockomat: сюда смотрит продавец, когда проверяет нас. 2 ролика в неделю и сторис, продвигаем лучшие 20% и догоняем посетителей сайта.</p></div>
+        <div class="r"><b>Instagram<small>9:16</small></b><p>Витрина бренда: ролики основателя и сделок, сюда смотрит продавец, когда проверяет нас. 2 ролика в неделю и сторис, продвигаем лучшие 20% и догоняем посетителей сайта.</p></div>
         <div class="r"><b>TikTok и YouTube Shorts<small>9:16 · без бюджета</small></b><p>Те же ролики без отдельной съёмки. На YouTube только Shorts, у каждого заголовок с вопросом продавца.</p></div>
         <div class="r"><b>PR</b><p>Индекс стока дважды в год из наших сделок, колонка «ESPR полгода спустя» 19 января, комментарии о банкротствах в течение суток.</p></div>
         <div class="r"><b>GEO и SEO</b><p>Нейросети сильнее всего верят упоминаниям бренда на чужих сайтах и в YouTube<sup class="s"><a href="#s43">43</a></sup>. Профили, каталоги, разметка, ответ в первых строках.</p></div>
@@ -712,7 +716,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   <div class="budget">
     <div class="bar" id="bbar"></div>
     <div class="blist" id="blist"></div>
-    <p class="note" style="margin-top:16px">Месяцы 1-3: ролики стартуют после проверки героя, ChatGPT Ads только в месяце 3, поэтому траты ниже €5 000. Остаток уходит в сезонный резерв окна январь-март. Разово: проверка героя €400-600 и 3D-модель автомата €1 000-2 000. Деньги ChatGPT Ads после теста уходят в канал, где продавец A или B дешевле.</p>
+    <p class="note" style="margin-top:16px">Месяцы 1-3: ролики раскачиваются постепенно, ChatGPT Ads только в месяце 3, поэтому траты ниже €5 000. Остаток уходит в сезонный резерв окна январь-март. Деньги ChatGPT Ads после теста уходят в канал, где продавец A или B дешевле.</p>
   </div>
 </section>
 
@@ -759,8 +763,8 @@ button,a{-webkit-tap-highlight-color:transparent}
 
   <div class="sub-h"><h3>Как идёт год</h3><span>месяц 1 это декабрь 2026</span></div>
   <div class="phases">
-    <div><b>Месяц 1</b><p>Проверка Stockomat на продавцах и в Meta. CRM с категориями A, B, C, источником и стадиями до вывоза. Посадочные по языкам, поиск на фразы продавцов. Списки 300 компаний и журналистов.</p></div>
-    <div><b>Месяцы 2-3</b><p>3D-модель автомата, восемь роликов в запасе, запуск по 2 в неделю. Исходящие по правилам стран. Сезонный резерв в окно январь-март. Колонка «ESPR полгода спустя», ChatGPT Ads в месяце 3.</p></div>
+    <div><b>Месяц 1</b><p>Первые ролики основателя и шаблоны. CRM с категориями A, B, C, источником и стадиями до вывоза. Посадочные по языкам, поиск на фразы продавцов. Списки 300 компаний и журналистов.</p></div>
+    <div><b>Месяцы 2-3</b><p>Восемь роликов в запасе, выпуск по 2 в неделю. Исходящие по правилам стран. Сезонный резерв в окно январь-март. Колонка «ESPR полгода спустя», ChatGPT Ads в месяце 3.</p></div>
     <div><b>Месяцы 4-6</b><p>Рубрики, которые зашли, становятся сериями. Первый индекс стока, паспорт партии в каждом оффере, первые подкасты.</p></div>
     <div><b>Месяцы 7-12</b><p>Второй индекс к MICAM в сентябре, окно июль-сентябрь, французский и испанский на сайте. Деньги перетекают туда, где продавец дешевле.</p></div>
   </div>
@@ -910,7 +914,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   <div class="bay-head">
     <span class="label"><b>Источники</b> проверка ноября 2026 <span class="bars" aria-hidden="true"></span></span>
     <h2>Откуда цифры</h2>
-    <p>Нишу, план, платформу и героя проверяли по открытым источникам. Цифры конкурентов взяты с их сайтов и из прессы, трафик сайтов это оценки Semrush. Рендеры героя сделаны с ИИ.</p>
+    <p>Нишу, план и платформу проверяли по открытым источникам. Цифры конкурентов взяты с их сайтов и из прессы, трафик сайтов это оценки Semrush.</p>
   </div>
   <details class="sources">
     <summary>Показать все источники</summary>
@@ -948,7 +952,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   (function () {
     const scr = $('#screen'); if (!scr) return;
     const fr = $$('#frames .fr'), cap = $('#cap'), end = $('#endcard'), prog = $('#prog'), btns = $$('.reelctl button[data-f]'), play = $('#r-play');
-    const CAP = ['Your warehouse in January.', 'Stockomat pays first.', 'Then it takes the whole lot.', 'One line per box.'];
+    const CAP = ['', '', '', 'One passport for your ESPR report.'];
     const D = 3000, N = fr.length, T = (N + 1) * D;
     let t = 0, last = performance.now(), running = !RM, vis = false, cur = -1;
     function show(k) {
@@ -970,28 +974,9 @@ button,a{-webkit-tap-highlight-color:transparent}
     show(0); requestAnimationFrame(frame);
   })();
 
-  /* ---------- council votes ---------- */
-  (function () {
-    const host = $('#votes'); if (!host) return;
-    const V = [
-      ['Stockomat', 'автомат, который платит первым', 8, 46.3, true],
-      ['BLOK', 'паллета в стрейч-плёнке', 4, 43.3],
-      ['Pinza', 'клешня, которая не роняет', 4, 42.5],
-      ['Uff', 'раздутый склад продавца', 2, 41.0],
-      ['Shoebill', 'китоглав-директор', 2, 39.8],
-      ['Pylo', 'конус-воронка', 2, 39.5],
-      ['Kai', 'фигурка 1:87 на погрузке', 1, 41.3],
-      ['Noto', 'шнурок из стока', 1, 39.5]
-    ];
-    host.classList.add('pre');
-    host.innerHTML = V.map(v => `<div class="vote${v[4] ? ' win' : ''}"><div class="nm"><b>${v[0]}</b><small>${v[1]}</small></div><div class="b2" role="img" aria-label="${v[0]}: ${v[2]} очков, средняя оценка ${String(v[3]).replace('.', ',')} из 60"><i style="width:${v[2] / 8 * 100}%"></i><em>${v[3].toFixed(1).replace('.', ',')} / 60</em></div><div class="pt">${v[2]}</div></div>`).join('');
-    if (RM) { host.classList.remove('pre'); return; }
-    new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { host.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(host);
-  })();
-
   /* ---------- flywheel (HTML loop) ---------- */
   const fly = [
-    ['Герой бренда', 'вертикальные ролики'],
+    ['Лицо бренда', 'основатель и ролики'],
     ['Внимание', 'Instagram · TikTok · Shorts'],
     ['Доверие', 'PR · индекс стока · нейросети'],
     ['Продавцы', 'исходящие · поиск · LinkedIn'],
@@ -1003,7 +988,7 @@ button,a{-webkit-tap-highlight-color:transparent}
     function draw() {
       const w = Math.max(W(), 280), narrow = w < 640;
       const H = narrow ? 5 * 74 + 40 : 210;
-      const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', `0 0 ${w} ${H}`); s.setAttribute('role', 'img'); s.setAttribute('aria-label', 'Маховик роста: герой, внимание, доверие, продавцы, сделки и снова герой');
+      const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', `0 0 ${w} ${H}`); s.setAttribute('role', 'img'); s.setAttribute('aria-label', 'Маховик роста: лицо бренда, внимание, доверие, продавцы, сделки и снова лицо бренда');
       let h = `<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" class="c1"/></marker></defs>`;
       if (!narrow) {
         const bw = (w - 4 * 28) / 5, y = 30, bh = 84;
@@ -1057,10 +1042,10 @@ button,a{-webkit-tap-highlight-color:transparent}
     const W = [
       ['7.12', 'CRM с категориями A, B, C. Список 300 компаний, правила исходящих по странам'],
       ['14.12', 'Быстрые правки benefitstock.com, посадочные DE и EN с загрузкой сток-листа'],
-      ['21.12', 'Поиск на фразы продавцов с потолком. Кадры Stockomat 8-10 продавцам'],
-      ['28.12', 'A/B в Meta: Stockomat против BLOK. LinkedIn основателя, 3 поста в неделю'],
-      ['4.01', 'Решение по герою. Первая волна исходящих: NL, IT, FR, ES'],
-      ['11.01', '3D-модель автомата, восемь роликов в запас. Встречи на Pitti Uomo и Expo Riva Schuh'],
+      ['21.12', 'Поиск на фразы продавцов с потолком. Первые 4 ролика основателя'],
+      ['28.12', 'LinkedIn основателя, 3 поста в неделю. Шаблон паспорта партии в каждом оффере'],
+      ['4.01', 'Первая волна исходящих: NL, IT, FR, ES'],
+      ['11.01', 'Восемь роликов в запас. Встречи на Pitti Uomo и Expo Riva Schuh'],
       ['18.01', 'Колонка «ESPR полгода спустя» 19.01. Ролики по 2 в неделю', 'pr'],
       ['25.01', 'Ретаргетинг Instagram, вторая волна исходящих, посадочные IT и NL'],
       ['1.02', 'Шаблон «новость дня», комментарии о банкротствах в течение суток', 'pr'],
@@ -1076,7 +1061,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   /* ---------- budget ---------- */
   (function () {
     const B = [
-      ['Ролики героя', 1000, 'var(--ink)', 'var(--bg)', '6-8 роликов Stockomat и шаблоны'],
+      ['Ролики', 1000, 'var(--ink)', 'var(--bg)', '6-8 роликов основателя и сделок, шаблоны'],
       ['PR', 1000, 'var(--steel)', 'var(--bg)', 'пресса, индекс, переводы'],
       ['Google и Microsoft Ads', 750, 'var(--hv)', '#14181D', 'потолок, только фразы продавцов'],
       ['Instagram', 700, 'var(--kraft)', '#14181D', 'лучшие ролики и ретаргетинг'],
